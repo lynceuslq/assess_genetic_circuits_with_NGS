@@ -73,7 +73,7 @@ def plotdepwithanno(gfffile, sendepth, antisendepth, plotfile, samp):
     ax2.plot(plotloc(sendepth), plotdepth(sendepth))
     t2 = "_".join([samp, "sense", "coverage","depth","by","site"])
     ax2.set_title(t2, fontsize=10)
-    x3.plot(plotloc(antisendepth), plotdepth(antisendepth),'tab:green')
+    ax3.plot(plotloc(antisendepth), plotdepth(antisendepth),'tab:green')
     t3 = "_".join([samp, "antisense", "coverage","depth","by","site"])
     ax3.set_title(t3, fontsize=10)
     
